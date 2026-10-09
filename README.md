@@ -15,7 +15,6 @@
 ## 智能体迭代循环
 
 智能体按轮次运行：
-
 1. **基线** — 标准 Dinkelbach 算法，测量收敛性。
 2. **策略搜索** — 尝试不同的子问题求解器（谱分解、SDP、梯度投影）。
 3. **秩探索** — 构造带秩约束的实例，测试多项式可解性。
@@ -28,14 +27,11 @@
 
 ## 结果
 
-
 ## 运行方式
 
-
 ## 参考文献
-
-- Dinkelbach, W. (1967). On nonlinear fractional programming.
-- 华为难题：分式QP优化问题快速稳定求解
+[1] DINKELBACH W. On nonlinear fractional programming[J]. Management Science, 1967, 13(7): 492-498.
+[2] 华为技术有限公司. 分式QP优化问题快速稳定求解[EB/OL]. 华为难题揭榜平台, 2025.
 
 ## 报告
 

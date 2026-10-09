@@ -31,6 +31,7 @@
 
 ## 参考文献
 [1] DINKELBACH W. On nonlinear fractional programming[J]. Management Science, 1967, 13(7): 492-498.
+
 [2] 华为技术有限公司. 分式QP优化问题快速稳定求解[EB/OL]. 华为难题揭榜平台, 2025.
 
 ## 报告

@@ -1,40 +1,43 @@
-# fractional-quadratic-programming-agent
-An iterative agent for solving fractional quadratic programming problems.
+markdown
+# 分式QP优化智能体
 
-## Problem
+一个用于求解分式二次规划问题的迭代式智能体。
 
-Minimize:
+## 问题定义
+
+最小化：
 
     f(x) = (x^T A x + α) / (x^T B x + β)
-    
-over x ∈ {-1, 1}^n, where A, B are symmetric matrices.
 
-This problem is NP-hard in general (contains Max-Cut as a special case).
-Polynomially solvable when rank(A) ≤ r_a, rank(B) ≤ r_b, A has nonpositive
-diagonal, and B has nonnegative diagonal.
+其中 x ∈ {-1, 1}^n，A、B 为对称矩阵。
 
-## Agent Iteration Loop
+该问题在一般情况下是 NP-难的（包含最大割问题作为特例）。当 rank(A) ≤ r_a、rank(B) ≤ r_b，且 A 的对角元非正、B 的对角元非负时，问题可在多项式时间内求解。
 
-The agent runs in rounds:
+## 智能体迭代循环
 
-1. **Baseline** — Standard Dinkelbach algorithm, measure convergence.
-2. **Strategy Search** — Try different subproblem solvers (spectral, SDP,
-   gradient projection).
-3. **Rank Exploration** — Construct instances with rank constraints, test
-   polynomial solvability.
-4. **Acceleration** — Improve update rules based on error patterns.
+智能体按轮次运行：
 
-Each round records:
-- Iteration count
-- Objective value decrease
-- Wall-clock time
+1. **基线** — 标准 Dinkelbach 算法，测量收敛性。
+2. **策略搜索** — 尝试不同的子问题求解器（谱分解、SDP、梯度投影）。
+3. **秩探索** — 构造带秩约束的实例，测试多项式可解性。
+4. **加速** — 基于误差模式改进更新规则。
 
-## Results
+每轮记录：
+- 迭代次数
+- 目标函数下降值
+- 运行时间
 
-## How to Run
+## 结果
 
-## Reference
+
+## 运行方式
+
+
+## 参考文献
+
 - Dinkelbach, W. (1967). On nonlinear fractional programming.
-  
-## Report
-See [report.pdf](./report.pdf) for the full iteration summary.
+- 华为难题：分式QP优化问题快速稳定求解
+
+## 报告
+
+完整迭代总结见 [report.pdf](./report.pdf)。
